@@ -7,9 +7,9 @@ const port = 8080;
 
 const pool = new Pool({
     user: 'default',
-    host: 'ep-snowy-math-a4dkdoie-pooler.us-east-1.aws.neon.tech',
+    host: 'ep-proud-violet-a42j0f3l-pooler.us-east-1.aws.neon.tech',
     database: 'verceldb',
-    password: 'NSUMG72HdDQJ',
+    password: 'jyeR8A5PQuGN',
     port: 5432,
     ssl: {
         rejectUnauthorized: false, // Allow self-signed certificates
@@ -17,7 +17,7 @@ const pool = new Pool({
 });
 
 // Middleware setup
-app.use(cors({ origin: 'https://course-scanner-aws.vercel.app' }));
+app.use(cors({ origin: 'https://course-scanner-frontend-sandy.vercel.app' }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
